@@ -1,0 +1,45 @@
+#!/bin/sh
+# FF AutoSnap Enhanced - iSH script
+
+echo ">>> Bật AimAssist & AutoSnap cho FF thường"
+
+# Giảm delay cảm ứng về gần 0
+touch_delay=0
+echo "Touch delay = $touch_delay ms"
+
+# Tăng tracking (hyper_snap)
+tracking_mode="hyper_snap"
+echo "Tracking mode = $tracking_mode"
+
+# Cấu hình AutoAdjust
+drag_factor=0.76
+headshot_bias=0.99
+horiz_snap=1.2
+snap_strength=1.0
+echo "Drag=$drag_factor | Headshot=$headshot_bias | Snap=$snap_strength | HSnap=$horiz_snap"
+
+# Profile M1887 riêng
+m1887_drag=0.7
+m1887_bias=1.0
+m1887_snap=1.25
+m1887_hsnap=1.4
+echo "[M1887] Drag=$m1887_drag | Bias=$m1887_bias | Snap=$m1887_snap | HSnap=$m1887_hsnap"
+
+# Giảm độ trễ nhập liệu
+input_latency=2
+echo "Input Latency = $input_latency ms"
+
+# Chống rung
+antishake="high"
+echo "AntiShake = $antishake"
+
+# Nhạy scope
+general=97
+reddot=100
+scope2x=100
+scope4x=100
+sniper=100
+freelook=90
+echo "Sensitivity => General:$general, RedDot:$reddot, 2x:$scope2x, 4x:$scope4x, Sniper:$sniper, FreeLook:$freelook"
+
+echo ">>> Config đã áp dụng (giả lập trong iSH)"
